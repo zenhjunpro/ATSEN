@@ -4,7 +4,7 @@
 
 ## ASTEN Framework
 
-![](C:\Users\ZengJun\Desktop\毕业论文参考\框架.png)
+!(https://github.com/zenhjunpro/ASTEN/blob/main/image/%E6%A1%86%E6%9E%B6.png)
 
 ## Requirements
 
