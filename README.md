@@ -16,5 +16,20 @@
 - tqdm==4.64.0
 - ...
 
-you can use `pip -r requirements.txt` to create environment
+you can see the enviroment in requirements.txt or you can use `pip -r requirements.txt` to create environment
 
+## How to run
+
+```yaml
+sh run_conll03.sh <GPU ID> <DATASET NAME>
+```
+
+e.g.
+
+```yaml
+sh run_conll03.sh 0,1 conll03
+```
+
+## Notes and Acknowledgments
+
+The implementation is based on https://github.com/AIRobotZhang/SCDL
