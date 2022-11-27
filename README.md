@@ -18,17 +18,39 @@
 
 you can see the enviroment in requirements.txt or you can use `pip -r requirements.txt` to create environment
 
+## Benchmark
+
+The reuslts (entity-level F1 score) are summarized as follows:
+
+|  Method   |  CoNLL03  | OntoNotes5.0 |  Twitter  |
+| :-------: | :-------: | :----------: | :-------: |
+|   BOND    |   81.48   |    68.35     |   48.01   |
+|   SCDL    |   83.69   |    68.61     |   51.09   |
+| **ATSEN** | **85.59** |  **68.95**   | **52.46** |
+
 ## How to run
 
-```yaml
-sh run_conll03.sh <GPU ID> <DATASET NAME>
+```
+sh <run_dataset>.sh <GPU ID> <DATASET NAME>
 ```
 
 e.g.
 
-```yaml
+```
 sh run_conll03.sh 0,1 conll03
 ```
+
+```
+sh run_ontonotes5.sh 0,1 ontonotes5
+```
+
+```
+sh run_twitter.sh 0,1 twitter
+```
+
+## Models
+
+
 
 ## Notes and Acknowledgments
 
