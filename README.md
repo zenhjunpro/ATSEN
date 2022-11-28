@@ -8,15 +8,19 @@
 
 ## Requirements
 
+At least one GPU is required to run the code.
+
+enviroment:
+
 - apex==0.1
 - python==3.7.4
 - pytorch==1.6.0
--  tranformers==4.19.3
+- tranformers==4.19.3
 - numpy==1.21.6
 - tqdm==4.64.0
 - ...
 
-you can see the enviroment in requirements.txt or you can use `pip -r requirements.txt` to create environment
+you can see the enviroment in requirements.txt or you can use `pip3 install -r requirements.txt` to create environment
 
 ## Benchmark
 
@@ -28,10 +32,14 @@ The reuslts (entity-level F1 score) are summarized as follows:
 |   SCDL    |   83.69   |    68.61     |   51.09   |
 | **ATSEN** | **85.59** |  **68.95**   | **52.46** |
 
-## How to run
+## Reproducing the Results
+
+We provide three bash scripts `run_conll03.sh`,`run_ontonotes5.sh`,`run_webpage.sh` for running the model on the three datasets.
+
+you can run the code like:
 
 ```
-sh <run_dataset>.sh <GPU ID> <DATASET NAME>
+ sh <run_dataset>.sh <GPU ID> <DATASET NAME>
 ```
 
 e.g.
@@ -40,13 +48,9 @@ e.g.
 sh run_conll03.sh 0,1 conll03
 ```
 
-```
-sh run_ontonotes5.sh 0,1 ontonotes5
-```
+The bash scripts include arguments,they are important and need to be set carefully:
 
-```
-sh run_twitter.sh 0,1 twitter
-```
+
 
 ## Models
 
