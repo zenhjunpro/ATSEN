@@ -116,7 +116,7 @@ The bash scripts include arguments,they are important and need to be set careful
 
 ## Models
 
-We provide the models in this page.You can reproduce the results of the experiment.The result  we do can see in [log.txt]()
+We provide the models in this page.You can reproduce the results of the experiment.The result  we do can see in [log.txt](https://github.com/zenhjunpro/ATSEN/blob/main/log.txt)
 
 ## Notes and Acknowledgments
 
