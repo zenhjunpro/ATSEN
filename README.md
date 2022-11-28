@@ -4,6 +4,8 @@
 
 ## ATSEN Framework
 
+![https://github.com/zenhjunpro/ATSEN/blob/main/image/Motivation.png]()
+
 ![](https://github.com/zenhjunpro/ATSEN/blob/main/image/%E6%A1%86%E6%9E%B6.png)
 
 ## Requirements
