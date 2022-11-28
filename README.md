@@ -34,7 +34,26 @@ The reuslts (entity-level F1 score) are summarized as follows:
 
 ## Motivation
 
-![]()
+![](https://github.com/zenhjunpro/ATSEN/blob/main/image/2.png)
+
+```python
+def _update_mean_model_variables(stu_model, teach_model, alpha, global_step,t_total,param_momentum):
+    m = get_param_momentum(param_momentum,global_step,t_total)
+    for p1, p2 in zip(stu_model.parameters(), teach_model.parameters()):    
+        tmp_prob = np.random.rand()
+        if tmp_prob < 0.8:
+            pass
+        else:
+            p2.data = m * p2.data + (1.0 - m) * p1.detach().data
+            
+def get_param_momentum(param_momentum,current_train_iter,total_iters):
+
+    return 1.0 - (1.0 - param_momentum) * (
+        (math.cos(math.pi * current_train_iter / total_iters) + 1) * 0.5
+    )
+```
+
+
 
 ## Reproducing the Results
 
