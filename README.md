@@ -4,8 +4,6 @@
 
 ## ATSEN Framework
 
-![](https://github.com/zenhjunpro/ATSEN/blob/main/image/Motivation.png)
-
 ![](https://github.com/zenhjunpro/ATSEN/blob/main/image/%E6%A1%86%E6%9E%B6.png)
 
 ## Requirements
@@ -33,6 +31,10 @@ The reuslts (entity-level F1 score) are summarized as follows:
 |   BOND    |   81.48   |    68.35     |   48.01   |
 |   SCDL    |   83.69   |    68.61     |   51.09   |
 | **ATSEN** | **85.59** |  **68.95**   | **52.46** |
+
+## Motivation
+
+![]()
 
 ## Reproducing the Results
 
