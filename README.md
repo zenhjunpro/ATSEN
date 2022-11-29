@@ -94,7 +94,7 @@ The bash scripts include arguments,they are important and need to be set careful
 - `EPOCH`:
 - `LABEL_MODE`:
 - `WEIGHT_DECAY`:
-- ``SEED:`
+- `SEED:`
 - `ADAM_EPS`:
 - `ADAM_BETA1`:
 - `ADAM_BETA2`:
