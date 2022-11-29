@@ -73,69 +73,36 @@ sh run_conll03.sh 0,1 conll03
 
 The bash scripts include arguments,they are important and need to be set carefully:
 
-- `student1_model_name_or_path` :
+- `GPUID`:
 
-- `student2_model_name_or_path `:
+- `DATASET` :
 
-- `output_dir`:
+- `TOKENIZER_TYPE` :
+- `STUDENT1_TYPE` :
+- `STUDENT2_TYPE` :
+- `TOKENIZER_NAME` :
+- `STUDENT1_MODEL_NAME` :
+- `STUDENT2_MODEL_NAME` :
+- `LR` :
+- `WARMUP` :
+- `BEGIN_EPOCH` :
+- `PERIOD` :
 
-- `tokenizer_name`:
+- `MEAN_ALPHA`:
+- `THRESHOLD`:
+- `TRAIN_BATCH`:
+- `EPOCH`:
+- `LABEL_MODE`:
+- `WEIGHT_DECAY`:
+- ``SEED:`
+- `ADAM_EPS`:
+- `ADAM_BETA1`:
+- `ADAM_BETA2`:
+- `EVAL_BATCH`:
 
-- `cache_dir `:
+## Running on New Datasets
 
-- `max_seq_length `:
 
-- `learning_rate`:
-
-- `weight_decay `:
-
-- `adam_epsilon`:
-
-- `adam_beta1 `:
-
-- `adam_beta2 `:
-
-- `max_grad_norm `:
-
-- `num_train_epochs `:
-
-- `warmup_steps `:
-
-- `per_gpu_train_batch_size `:
-
-- `per_gpu_eval_batch_size `:
-
-- `gradient_accumulation_steps `:
-
-- `logging_steps`:
-
-- `save_steps `:
-
-- `evaluate_during_training `:
-
-- `seed `:
-
-- `overwrite_output_dir`:
-
-- `mean_alpha`:
-
-- `self_learning_label_mode`:
-
-- `self_learning_period`:
-
-- `model_type `:
-
-- `begin_epoch `:
-
-- `do_train`:
-
-- `dataset`:
-
-- `threshold `:
-
-- `al `:
-
-- `bate `:
 
 ## Models
 
