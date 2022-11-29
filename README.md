@@ -1,8 +1,8 @@
-## Distantly-Supervised Named Entity Recognition with Adaptive Teacher Learning and  Fine-grained Student Ensemble（AAAI 2023）
+## ATSEN
 
+The source code used for [Distantly-Supervised Named Entity Recognition with Adaptive Teacher Learning and Fine-grained Student Ensemble](),published in AAAI 2023.
 
-
-## ATSEN Framework
+## Framework
 
 ![](https://github.com/zenhjunpro/ATSEN/blob/main/image/%E6%A1%86%E6%9E%B6.png)
 
@@ -139,7 +139,7 @@ The bash scripts include arguments,they are important and need to be set careful
 
 ## Models
 
-We provide the models in this page.You can reproduce the results of the experiment.The result  we do can see in [log.txt](https://github.com/zenhjunpro/ATSEN/blob/main/log.txt)
+We provide the models in this [page]().You can reproduce the results of the experiment.The result  we do can see in [log.txt](https://github.com/zenhjunpro/ATSEN/blob/main/log.txt)
 
 ## Notes and Acknowledgments
 
