@@ -73,18 +73,18 @@ sh run_conll03.sh 0,1 conll03
 
 The bash scripts include arguments,they are important and need to be set carefully:
 
-- `GPUID`:
-- `DATASET` :
+- `GPUID`:It means whice device you will use.We  use two devices in our experiment,you can use more.
+- `DATASET` :It means which dataset you will use.You can run your own dataset if you create the dataset as follows.
 - `LR` :
 - `WARMUP` :
-- `BEGIN_EPOCH` :
-- `PERIOD` :
-- `THRESHOLD`:
+- `BEGIN_EPOCH` :The number of rounds of training in the first phase is different for different datasets.
+- `PERIOD` :The number of rounds of training in the first phase is different for different datasets.
+- `THRESHOLD`:This parameter is the threshold mentioned in the text, which is generally set to 0.9.
 - `TRAIN_BATCH`:
-- `EPOCH`:
-- `LABEL_MODE`:
-- `SEED:`
-- `EVAL_BATCH`:
+- `EPOCH`:This argument means the number of training times for the entire experiment. The general setting is `50`.
+- `LABEL_MODE`:The value of this parameter is `Soft `or `Hard`. In general, choose `Soft `, but choose `Hard`  on the Twitter dataset.
+- `SEED:`This can help you get the same result with the same arguments. We usually set this to 0.
+- `EVAL_BATCH`:This argument only affects the speed of the algorithm; use as large evaluation batch size as your GPUs can hold.We use `32` as usually.
 
 ## Running on New Datasets
 
