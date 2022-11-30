@@ -74,30 +74,16 @@ sh run_conll03.sh 0,1 conll03
 The bash scripts include arguments,they are important and need to be set carefully:
 
 - `GPUID`:
-
 - `DATASET` :
-
-- `TOKENIZER_TYPE` :
-- `STUDENT1_TYPE` :
-- `STUDENT2_TYPE` :
-- `TOKENIZER_NAME` :
-- `STUDENT1_MODEL_NAME` :
-- `STUDENT2_MODEL_NAME` :
 - `LR` :
 - `WARMUP` :
 - `BEGIN_EPOCH` :
 - `PERIOD` :
-
-- `MEAN_ALPHA`:
 - `THRESHOLD`:
 - `TRAIN_BATCH`:
 - `EPOCH`:
 - `LABEL_MODE`:
-- `WEIGHT_DECAY`:
 - `SEED:`
-- `ADAM_EPS`:
-- `ADAM_BETA1`:
-- `ADAM_BETA2`:
 - `EVAL_BATCH`:
 
 ## Running on New Datasets
