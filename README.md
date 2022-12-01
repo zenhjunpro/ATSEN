@@ -75,12 +75,12 @@ The bash scripts include arguments,they are important and need to be set careful
 
 - `GPUID`:It means whice device you will use.We  use two devices in our experiment,you can use more.
 - `DATASET` :It means which dataset you will use.You can run your own dataset if you create the dataset as follows.
-- `LR` :
-- `WARMUP` :
+- `LR` :This parameter refers to the learning rate, adjusted for different data sets.
+- `WARMUP` :This parameter also needs to be adjusted according to different datasets.
 - `BEGIN_EPOCH` :The number of rounds of training in the first phase is different for different datasets.
 - `PERIOD` :The number of rounds of training in the first phase is different for different datasets.
 - `THRESHOLD`:This parameter is the threshold mentioned in the text, which is generally set to 0.9.
-- `TRAIN_BATCH`:
+- `TRAIN_BATCH`:This parameter is the size of the training batch, you can adjust it according to the number of devices you have, and the final result of different training batches is different。
 - `EPOCH`:This argument means the number of training times for the entire experiment. The general setting is `50`.
 - `LABEL_MODE`:The value of this parameter is `Soft `or `Hard`. In general, choose `Soft `, but choose `Hard`  on the Twitter dataset.
 - `SEED:`This can help you get the same result with the same arguments. We usually set this to 0.
