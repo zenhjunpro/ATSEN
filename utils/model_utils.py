@@ -62,37 +62,6 @@ def opt_grad(loss, in_var, optimizer):
         loss = loss * optimizer.scaler.loss_scale
     return torch.autograd.grad(loss, in_var)
 
-def _update_mean_model_variables_Bond(stu_model, teach_model, alpha, global_step,t_total,param_momentum):
-    alpha = min(1 - 1 / (global_step + 1), alpha)
-    m = get_param_momentum(param_momentum,global_step,t_total)
-    for p1, p2 in zip(stu_model.parameters(), teach_model.parameters()):    
-        p2.data = p1.detach().data
-
-def _update_mean_model_variables_EMA(stu_model, teach_model, alpha, global_step,t_total,param_momentum):
-    alpha = min(1 - 1 / (global_step + 1), alpha)
-    for m_param, param in zip(teach_model.parameters(), stu_model.parameters()):
-        m_param.data.mul_(alpha).add_(1 - alpha, param.data) 
-
-def _update_mean_model_variables_SE(stu_model, teach_model, alpha, global_step,t_total,param_momentum):
-    alpha = min(1 - 1 / (global_step + 1), alpha)
-    m = get_param_momentum(param_momentum,global_step,t_total)
-    for p1, p2 in zip(stu_model.parameters(), teach_model.parameters()):    
-        tmp_prob = np.random.rand()
-        if tmp_prob < 0.8:
-            pass
-        else:
-            p2.data = p1.detach().data
-
-def _update_mean_model_variables_STS(stu_model, teach_model, alpha, global_step,t_total,param_momentum):
-    alpha = min(1 - 1 / (global_step + 1), alpha)
-    m = get_param_momentum(param_momentum,global_step,t_total)
-    for p1, p2 in zip(stu_model.parameters(), teach_model.parameters()):    
-        tmp_prob = np.random.rand()
-        if tmp_prob < 0.8:
-            pass
-        else:
-            p2.data = m * p2.data + (1.0 - m) * p1.detach().data
-
 def _update_mean_model_variables(model, m_model, alpha, global_step):
     alpha = min(1 - 1 / (global_step + 1), alpha)
     for m_param, param in zip(m_model.parameters(), model.parameters()):

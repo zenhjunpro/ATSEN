@@ -39,7 +39,7 @@ EVAL_BATCH=32
 # output
 OUTPUT=$PROJECT_ROOT/ptms/$DATASET/
 
-CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=$GPUID python3 -u test.py --data_dir $DATA_ROOT \
+CUDA_DEVICE_ORDER=PCI_BUS_ID CUDA_VISIBLE_DEVICES=$GPUID python3 -u main.py --data_dir $DATA_ROOT \
   --student1_model_name_or_path $STUDENT1_MODEL_NAME \
   --student2_model_name_or_path $STUDENT2_MODEL_NAME \
   --output_dir $OUTPUT \
