@@ -1,6 +1,6 @@
 ## ATSEN
 
-The source code used for [Distantly-Supervised Named Entity Recognition with Adaptive Teacher Learning and Fine-grained Student Ensemble](),published in AAAI 2023.
+The source code used for [Distantly-Supervised Named Entity Recognition with Adaptive Teacher Learning and Fine-grained Student Ensemble](https://arxiv.org/abs/2212.06522),published in AAAI 2023.
 
 ## Framework
 
