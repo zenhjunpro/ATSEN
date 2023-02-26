@@ -164,10 +164,10 @@ class RobertaForTokenClassification_Modified(BertPreTrainedModel):
                         with torch.no_grad():
                             for model_t in module_list:
                                 outputs = model_t(**inputs)
-                                logit_t = outputs[0].view(-1,self.num_labels)[all_deactive_loss]
+                                logit_t = outputs[0].view(-1,self.num_labels)[all_active_loss]
                                 logit_t_list.append(logit_t)    
                         criterion_kd = DistillKL(2)
-                        logit_s = deactive_logits
+                        logit_s = active_logits
                         loss_div_list = []
                         grads = []
                         logit_s.register_hook(lambda grad: grads.append(
